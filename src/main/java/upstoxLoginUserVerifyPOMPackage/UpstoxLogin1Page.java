@@ -6,7 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class UpstoxLogin1Page {
-	@FindBy(xpath = "//input[@name = 'userId']") private WebElement userID;
+	
+	@FindBy(xpath = "//input[@id= 'userCode']") private WebElement userID;
 	@FindBy(xpath = "//input[@name = 'password']") private WebElement password;
 	@FindBy(xpath = "//div[text() = 'Sign into Upstox']") private WebElement loginBtn;
 	
@@ -14,8 +15,8 @@ public class UpstoxLogin1Page {
 		PageFactory.initElements(driverValue, this);
 	}
 	
-	public void inpUpstoxLogin1PageUserID(String userIDValue) {
-		userID.sendKeys(userIDValue);
+	public void inpUpstoxLogin1PageUserID() {
+		userID.sendKeys("418571");
 	}
 	
 	public void inpUpstoxLogin1PagePassword(String passwordValue) {

@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class UpstoxLogin3Page {
 	
-	@FindBy(xpath = "") private WebElement contBtn;
+	@FindBy(xpath = "//div[contains(text() , 'No,')]") private WebElement contBtn;
 	
 	public UpstoxLogin3Page(WebDriver driverValue) {
 		PageFactory.initElements(driverValue, this);
